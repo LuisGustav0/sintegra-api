@@ -14,4 +14,9 @@ export default class ResponseEntity {
     statusCode: HttpStatus.OK,
     body: data
   })
+
+  static internalServerError = (): IHttpResponse => ({
+    statusCode: HttpStatus.INTERNAL_SERVER_ERROR,
+    body: 'Internal Server Error'
+  })
 }
